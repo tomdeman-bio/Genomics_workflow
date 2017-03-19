@@ -25,14 +25,8 @@
     perl run_plasmidSPAdes.pl directory/containing/PhiX_and_contaminant/free/reads/only/*
 --------------------------------------
 
-## Perform the previous four steps using one Shell script. It runs bbduk, Trimmomatic, SPAdes, and PlasmidSPAdes in batch
+## Perform all four steps indicated above (bbduk-Trimmomatic-SPAdes-PlasmidSPAdes) plus BUSCO genome assembly QC, and Prokka gene annotation using one Bash script. Prokka will only annotate contigs of 500bp and larger (contigs are filtered using contig_size_select.pl)
 
 ### Usage
-    bash bbduk-trimmomatic-SPAdes-plasmidSPAdes.bash
---------------------------------------
-
-## Perform the same four steps as indicated above (bbduk-Trimmomatic-SPAdes-PlasmidSPAdes) plus BUSCO genome assembly QC, and Prokka gene annotation using one Shell script. Prokka will only annotate contigs of 500bp and larger.
-
-### Usage
-    bash bbduk-trimmomatic-SPAdes-plasmidSPAdes-prokka.bash
+    bash bbduk-trimmomatic-SPAdes-plasmidSPAdes-prokka-BUSCO.bash
 --------------------------------------
