@@ -25,7 +25,7 @@
     perl run_plasmidSPAdes.pl directory/containing/PhiX_and_contaminant/free/reads/only/*
 --------------------------------------
 
-## Perform all four steps indicated above (bbduk-Trimmomatic-SPAdes-PlasmidSPAdes) plus BUSCO genome assembly QC, and Prokka gene annotation using one Bash script. Prokka will only annotate contigs of 500bp and larger (contigs are filtered using contig_size_select.pl)
+## Perform all four steps indicated above (bbduk-Trimmomatic-SPAdes-PlasmidSPAdes) plus BUSCO genome assembly QC, MLST genotyping, plasmid replicon gene identification, AMR gene detection, and Prokka protein coding gene annotation using one Bash script. Script will only annotate/genotype contigs of 500bp and larger (contigs are filtered using contig_size_select.pl)
 
 ### Usage
     bash bbduk-trimmomatic-SPAdes-plasmidSPAdes-prokka-BUSCO.bash
